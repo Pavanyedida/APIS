@@ -1,5 +1,3 @@
-
-
 var adminMiddleware = async(req,res,next)=>{
     try{
         if(req.user.role !=="admin"){
@@ -11,5 +9,4 @@ var adminMiddleware = async(req,res,next)=>{
         console.log("error",error);
     }
 }
-
 module.exports = adminMiddleware

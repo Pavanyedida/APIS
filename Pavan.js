@@ -9,9 +9,9 @@ var app = express()
 
 app.use(express.json())
 
-app.use("/api/userRoutes",useRoutes)
+app.use("/",useRoutes)
 
-app.use("/api/productRoutes",productRoutes)
+app.use("/",productRoutes)
 
 connectToDatabase()
 
